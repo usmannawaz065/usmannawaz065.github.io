@@ -1,44 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usman Nawaz</title>
+  <title>Usman Nawaz | Portfolio</title>
+  <meta name="description" content="Usman Nawaz portfolio website hosted on GitHub Pages" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background:#f7f7f7; color:#222; }
-    header { background:#111; color:white; padding:40px 20px; text-align:center; }
-    main { max-width:900px; margin:30px auto; background:white; padding:30px; border-radius:12px; }
-    h1,h2 { margin-top:0; }
-    .card { background:#fafafa; border:1px solid #eee; padding:16px; border-radius:10px; margin:12px 0; }
-    a { color:#0a66c2; text-decoration:none; }
-    a:hover { text-decoration:underline; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f7fb;
+      color: #222;
+    }
+    .container {
+      width: min(1000px, 92%);
+      margin: auto;
+    }
+    header {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #dbeafe;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 35px 0;
+    }
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #111827;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .project h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .project a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .skills-list li {
+      background: #e5edff;
+      color: #1e3a8a;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 0 40px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Usman Nawaz</h1>
-    <p>My GitHub Portfolio Website</p>
+    <div class="container">
+      <h1>Usman Nawaz</h1>
+      <p>Beginner Web Developer | Learning & Building Projects</p>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn" href="https://github.com/usmannawaz065" target="_blank">View My GitHub</a>
+    </div>
   </header>
 
-  <main>
-    <h2>About Me</h2>
-    <p>Hello! I am learning web development and building projects.</p>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Hello! I’m <strong>Usman Nawaz</strong>. I’m learning web development and creating projects to improve my skills.
+          This website is hosted for free using <strong>GitHub Pages</strong>.
+        </p>
+        <p>
+          I’m interested in HTML, CSS, JavaScript, and building clean, useful websites.
+        </p>
+      </div>
+    </section>
 
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Project 1</h3>
-      <p>Short description of your project.</p>
-      <a href="https://github.com/usmannawaz01">View on GitHub</a>
-    </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card project">
+          <h3>Portfolio Website</h3>
+          <p>This personal portfolio website hosted on GitHub Pages.</p>
+          <a href="https://usmannawaz065.github.io" target="_blank">Live Demo</a>
+        </div>
 
-    <div class="card">
-      <h3>Project 2</h3>
-      <p>Another project description.</p>
-      <a href="https://github.com/usmannawaz01">View on GitHub</a>
-    </div>
+        <div class="card project">
+          <h3>My GitHub Repositories</h3>
+          <p>Explore my coding projects and practice work.</p>
+          <a href="https://github.com/usmannawaz065?tab=repositories" target="_blank">View Repos</a>
+        </div>
 
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
+        <div class="card project">
+          <h3>Future Project</h3>
+          <p>Add your next project here with a short description.</p>
+          <a href="https://github.com/usmannawaz065" target="_blank">GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (Learning)</li>
+          <li>GitHub</li>
+          <li>GitHub Pages</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>GitHub:</strong> <a href="https://github.com/usmannawaz065" target="_blank">github.com/usmannawaz065</a></p>
+        <p><strong>Email:</strong> your-email@example.com</p>
+        <p>Replace the email above with your real email address.</p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Usman Nawaz • Built with HTML/CSS and hosted on GitHub Pages
+    </div>
+  </footer>
+
 </body>
 </html>
